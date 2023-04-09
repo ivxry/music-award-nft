@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import { ChakraProvider } from '@chakra-ui/react';
 import ConnectWallet from './components/ConnectWallet';
-import ApproveMinter from './components/ManageMinter'; // Import ApproveMinter component
+import ApproveMinter from './components/ManageMinter';
 import MintAward from './components/MintAward';
 import SendAward from './components/SendAward';
 import { ethers } from 'ethers';
@@ -23,9 +23,9 @@ function App() {
           <ConnectWallet setAccount={setAccount} setContract={setContract} setSigner={setSigner} />
           {account && contract && signer && (
             <>
-              <ApproveMinter contract={contract} signer={signer} /> {/* Pass signer to ApproveMinter component */}
-              <MintAward contract={contract} signer={signer} />
-              <SendAward contract={contract} signer={signer} />
+              <ApproveMinter contract={contract} account={account} signer={signer} /> 
+              <MintAward contract={contract} account={account} signer={signer} />
+              <SendAward contract={contract} account={account} signer={signer}/>
             </>
           )}
         </main>
