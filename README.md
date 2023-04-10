@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+Titre du projet : Music Award NFT
+    Un projet de tokens non fongibles (NFT) pour les récompenses musicales.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description
+    Ce projet permet de créer et gérer des tokens non fongibles (NFT) représentant des récompenses musicales.
+    Les NFT peuvent être créés pour différents types de récompenses, tels que les disques d'or, de platine ou de diamant.
+    Chaque NFT contient des informations sur l'artiste, le titre de la musique, la date de certification, le label, l'album et le type de récompense.
 
-## Available Scripts
+Prérequis
+    Node.js
+    Hardhat
+    Github
+    Metamask
 
-In the project directory, you can run:
+Installation
+    1- Clonez le dépôt GitHub :
+    git clone https://github.com/ivxry/music-award-nft.git
 
-### `npm start`
+    2- Accédez au répertoire du projet :
+    cd music-award-nft
+    
+    3- Installez les dépendances :
+    npm install
+    Démarrez Hardhat ainsi que son noeud blockchain et configurez Metamask pour utiliser le réseau local.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    4- Déployez les contrats sur le réseau local :
+    npx hardhat run scripts/deploy.js
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    5- Démarrez le serveur de développement :
+    npm start
+    Le projet est maintenant prêt à être utilisé sur http://localhost:3000.
 
-### `npm test`
+Utilisation
+    Utilisez l'interface web pour interagir avec les contrats intelligents et gérer les NFT.
+    Vous pouvez créer de nouveaux NFT, consulter les informations des NFT existants et transférer les NFT entre les adresses.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Tests
+    Pour exécuter les tests du projet, utilisez la commande suivante :
+    npx hardhat test
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Remerciements
+    Un grand merci à Alyra l'école de la Blockchain pour les compétences transmises.
+    OpenZeppelin également pour les bibliothèques utilisées dans ce projet.
