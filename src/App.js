@@ -5,7 +5,6 @@ import ConnectWallet from './components/ConnectWallet';
 import ApproveMinter from './components/ManageMinter';
 import MintAward from './components/MintAward';
 import SendAward from './components/SendAward';
-import { ethers } from 'ethers';
 
 function App() {
   const [account, setAccount] = useState('');

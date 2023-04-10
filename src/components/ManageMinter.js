@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { ethers } from 'ethers';
 import { Button, Input, Stack, FormControl, FormLabel, useToast } from '@chakra-ui/react';
 
 const ManageMinter = ({ contract, signer }) => {

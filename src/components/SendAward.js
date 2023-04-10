@@ -7,12 +7,14 @@ import {
   VStack,
   Text,
   HStack,
+  useToast,
 } from '@chakra-ui/react';
-
 
 const SendAward = ({ contract, account }) => {
   const [tokenId, setTokenId] = useState('');
   const [recipient, setRecipient] = useState('');
+
+  const toast = useToast();
 
   const handleSendAward = async (event) => {
     event.preventDefault();
@@ -20,8 +22,24 @@ const SendAward = ({ contract, account }) => {
     try {
       const result = await contract.transferAward(tokenId, recipient);
       console.log('Award sent successfully:', result);
+      // Success toast
+      toast({
+        title: 'Award sent successfully',
+        description: `Token ID: ${tokenId}, Recipient: ${recipient}`,
+        status: 'success',
+        duration: 5000,
+        isClosable: true,
+      });
     } catch (error) {
       console.error('Error sending award:', error);
+      
+      toast({
+        title: 'Error sending award',
+        description: error.message,
+        status: 'error',
+        duration: 5000,
+        isClosable: true,
+      });
     }
   };
 

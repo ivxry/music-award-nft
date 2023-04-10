@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
-import { ethers } from 'ethers';
-import { ABI, ADDRESS } from './ABI.js';
 
 import {
-  Box,
   FormControl,
   FormLabel,
   Input,
